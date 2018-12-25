@@ -17,12 +17,12 @@
    (最好上網確認一下號碼都沒錯, 因網頁排版方式可能改變)
 
 2. 執行 prizematch 程式, 手動輸入
-    $ prizmatch Base_YYY年MM-MM月.txt
+   ```$ prizmatch Base_YYY年MM-MM月.txt```
 
    或自動比對
-    $ priamztch -f <文字檔> Base_YYY年MM-MM月.txt
+   ```$ priamztch -f <發票資料檔> Base_YYY年MM-MM月.txt```
 
-   <文字檔> 的內容通常是由 barcode scanner 掃描發票上的條碼存下的，
+   `<發票資料檔>` 的內容通常是由 barcode scanner 掃描發票上的條碼存下的，
    而不是手動輸入的。
 
 
@@ -33,19 +33,19 @@
 
 版本紀錄
 --------
-2016/9/28
-完成 `getBase2.py`
-使用 `BeautifulSoup4` 處理下載下來的 HTML 檔案。方便且較正確。
+- 2016/9/28
+  完成 `getBase2.py`
+  使用 `BeautifulSoup4` 處理下載下來的 HTML 檔案。方便且較正確。
 
-2016/??/??
-使用 Python 寫一個新的替代 Shell script。完成 `getBase.py`
-增開六獎的部份最容易出現問題
-檢查開獎數量是否符合? (ex: A 4 代表應該有 4 組號碼,
-如果沒有，修改 `Base.txt` 檔案, 將 A 4 改成符合的數量)
+- 2016/??/??
+  使用 Python 寫一個新的替代 Shell script。完成 `getBase.py`
+  增開六獎的部份最容易出現問題
+  檢查開獎數量是否符合? (ex: A 4 代表應該有 4 組號碼,
+  如果沒有，修改 `Base.txt` 檔案, 將 A 4 改成符合的數量)
 
-2015/9/5
-getBase.old.sh 是舊版 Shell script 程式，但因為不方便使用，
-改寫一個 Python 版本的，使用上較為方便。
+- 2015/9/5
+  `getBase.old.sh` 是舊版 Shell script 程式，但因為不方便使用，
+  改寫一個 Python 版本的，使用上較為方便。
 
 
 免責聲明
